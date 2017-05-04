@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>会移动的方格</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="initial.css"/>
+	<script type="text/javascript" src='initial.js'></script>
+</head>
+<body>
+	<p>
+		<h1>会移动的方格</h1>
+	</p>
+	<div class="canvas">
+		<canvas id="grid" width="550" height="550">你的浏览器不支持canvas!</canvas>
+	</div>
+	<div id="controller">
+			<div id="control_by_coordinate">
+				坐标： X<input type="text" name="coordinate" id="coordinate_x" title="请输入1-10的数字">
+					Y<input type="text" name="coordinate" id="coordinate_y" title="请输入1-10的数字">
+					A<input type="text" name="coordinate" id="coordinate_rotate" title="请输入0-360的数字">
+					<select id="control_by_instruction">
+						<option selected="selected">NONE</option>
+						<option>GO</option>
+						<option>TUNLEF</option>
+						<option>TUNRIG</option>
+						<option>TUNBAC</option>
+					</select>
+					<input type="button" name="coordinate" id="enter_1" value="确定">
+			</div>
+
+	</div>
+</body>
+</html>
